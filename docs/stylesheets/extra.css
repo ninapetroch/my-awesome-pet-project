@@ -11,5 +11,9 @@
   --md-default-fg-color--light: #025167; /*Цвет h1 и заголовков блоков toc и nav*/
 }
 
-
+.md-content h1, .md-content h2 {
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+    color: #4b5563;
+}
 
