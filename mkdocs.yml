@@ -71,7 +71,7 @@ plugins:
   - swagger-ui-tag    
   - redoc-tag
 
-
-
+extra_css:
+  - stylesheets/extra.css
 
 
