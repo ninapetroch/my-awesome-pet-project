@@ -38,6 +38,9 @@ nav:
  - Пользовательские сценарии: 
     - Сценарий «Редактирование заметки»: scripts/noteedit.md
     - Сценарий «Удаление заметки»: scripts/notedelete.md  
+ - API-документация:
+    - API Specification Swagger: api/swagger.md
+    - API Specification Redoc: api/redoc.md
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -54,15 +57,23 @@ markdown_extensions: # Расширения markdown
   - pymdownx.emoji: # Иконки и эмодзи
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
+  
   
 plugins:
+  - search
+  -  glightbox
   - tags:
       tags_allowed:
       - Telegram
       - Нотсапп
- 
+      - UML-диаграмма
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+  - swagger-ui-tag    
+  - redoc-tag
 
-
-
+extra_css:
+  - stylesheets/extra.css
 
 
